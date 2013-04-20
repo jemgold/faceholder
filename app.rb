@@ -3,21 +3,9 @@ require './image_resizer'
 require 'pry'
 
 class SpaceHolder < Sinatra::Base
-  $image_param_hash = {
-    :stretch=   => 's',
-    :padding=   => 'p',
-    :grayscale= => 'g',
-    :width=     => /^w(\d+)$/,
-    :height=    => /^h(\d+)$/
-  }
-
   get '/' do
-    'Spaceholder'
+    erb :index
   end
-
-  # get '/photos' do
-
-  # end
 
   get '/p' do
     redirect '/p/100'
