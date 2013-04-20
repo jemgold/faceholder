@@ -3,6 +3,8 @@ require './image_resizer'
 require 'pry'
 
 class SpaceHolder < Sinatra::Base
+  set :public_folder, File.dirname(__FILE__) + '/static'
+
   get '/' do
     erb :index
   end
