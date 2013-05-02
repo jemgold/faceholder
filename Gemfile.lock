@@ -17,6 +17,8 @@ GEM
       method_source (~> 0.8)
       slop (~> 3.4)
     rack (1.5.2)
+    rack-cache (1.2)
+      rack (>= 0.4)
     rack-protection (1.5.0)
       rack
     rake (10.0.4)
@@ -35,4 +37,5 @@ DEPENDENCIES
   mini_magick
   passenger
   pry
+  rack-cache
   sinatra
