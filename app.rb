@@ -10,7 +10,7 @@ class SpaceHolder < Sinatra::Base
   set :public_folder, File.dirname(__FILE__) + '/static'
 
   configure do
-    set :images, Dir.glob('raw/top100/*.jpg')
+    set :images, Dir.glob('raw/*.{jpg,png}')
   end
 
   get '/' do
